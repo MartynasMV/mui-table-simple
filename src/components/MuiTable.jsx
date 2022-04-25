@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from '@mui/material';
+import { Table, Typography } from '@mui/material';
 import { TableContainer } from '@mui/material';
 import { TableHead } from '@mui/material';
 import { TableBody } from '@mui/material';
@@ -13,10 +13,18 @@ export const MuiTable = () => {
       <Table aria-label="simple table" stickyHeader>
         <TableHead>
           <TableRow>
-            <TableCell>ID</TableCell>
-            <TableCell>First Name</TableCell>
-            <TableCell>Last Name</TableCell>
-            <TableCell align="center">Email</TableCell>
+            <TableCell>
+              <Typography style={{ fontWeight: 'bold' }}>ID</Typography>
+            </TableCell>
+            <TableCell>
+              <Typography style={{ fontWeight: 'bold' }}>First Name</Typography>
+            </TableCell>
+            <TableCell>
+              <Typography style={{ fontWeight: 'bold' }}>Last Name</Typography>
+            </TableCell>
+            <TableCell align="center">
+              <Typography style={{ fontWeight: 'bold' }}>Email</Typography>
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
